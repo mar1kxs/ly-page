@@ -3,7 +3,7 @@ const ctx = canvas.getContext("2d");
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
-const FALLING_COUNT = 300;
+const FALLING_COUNT = 200;
 
 class FallingText {
   constructor() {
@@ -15,7 +15,7 @@ class FallingText {
     this.y = Math.random() * -canvas.height;
     this.speed = 1 + Math.random() * 3;
     this.fontSize = 20 + Math.random() * 20;
-    this.text = "love you";
+    this.text = "bbycat02 <3";
     this.opacity = 0.4 + Math.random() * 0.6;
     this.color = `rgba(255,105,180,${this.opacity})`;
   }
@@ -39,7 +39,7 @@ class ClickText {
   constructor(x, y) {
     this.x = x;
     this.y = y;
-    this.text = "bbycat02";
+    this.text = "love you";
     this.opacity = 1;
     this.lifetime = 120;
     this.fontSize = 50;
