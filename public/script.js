@@ -52,8 +52,8 @@ class ClickText {
 
   draw() {
     ctx.font = `${this.fontSize}px Arial`;
-    ctx.fillStyle = `rgba(255, 255, 255,${this.opacity})`;
-    ctx.fillText(this.text, this.x - 90, this.y);
+    ctx.fillStyle = `rgba(245, 39, 39,${this.opacity})`;
+    ctx.fillText(this.text, this.x - 90, this.y + 40);
   }
 
   isAlive() {
@@ -70,7 +70,7 @@ class FlyingEmoji {
     this.vx = (Math.random() - 0.5) * 1.5;
     this.vy = -1 - Math.random() * 1.0;
     this.life = 120;
-    this.fontSize = 30 + Math.random() * 8;
+    this.fontSize = 20 + Math.random() * 8;
   }
 
   update() {
